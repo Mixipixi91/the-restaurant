@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+.footer-container .footer-contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container .footer-contact-info h2 {
+  align-self: center;
+}
+.footer-container .footer-contact-info .a {
+  text-decoration: underline;
+}
+.footer-container .footer-contact-info img {
+  width: 44px;
+  height: 44px;
+}
+.footer-container .footer-contact-info ul {
+  list-style-type: none;
+}
+.footer-container .footer-contact-info ul li {
+  color: rgba(245, 245, 245, 0.5);
+  font-weight: bold;
+  font-size: 16px;
+}
+.footer-container .footer-contact-info .socialMedia-logs {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.footer-container .gray-title {
+  color: rgba(245, 245, 245, 0.5);
+  font-weight: bold;
+}
+.footer-container .openHours-maps-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container .table-hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container .table-hours td {
+  padding: 5px 50px 5px 5px;
+}
+.footer-container .map-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container .map-container iframe {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 400px;
+}
+.footer-container .institution-log-container {
+  display: flex;
+  flex-direction: column;
+}
+.footer-container .institution-log-container .institution-img {
+  background-color: white;
+}
+.footer-container .institution-log-container a:-moz-any-link {
+  color: white;
+}
+.footer-container .institution-log-container a:any-link {
+  color: white;
+}
+
+@media screen and (min-width: 426px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .footer-container .footer-contact-info {
+    grid-column: 1/span 1;
+  }
+  .footer-container .table-hours {
+    display: grid;
+    grid-template-columns: 2/span 1;
+  }
+  .openHours-maps-container {
+    display: grid;
+    grid-column: 3/span 1;
+  }
+  .institutionLog {
+    display: grid;
+    grid-column: 1/span 3;
+  }
+}/*# sourceMappingURL=footer.css.map */

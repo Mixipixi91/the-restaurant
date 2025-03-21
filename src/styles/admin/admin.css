@@ -1,0 +1,75 @@
+.admin-container {
+  padding: 20px;
+}
+.admin-container h2 {
+  text-align: center;
+}
+.admin-container .edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.admin-container .edit-form input {
+  padding: 5px;
+  width: 96%;
+}
+.admin-container .edit-form button {
+  padding: 5px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+.admin-container .results {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+.admin-container .results .bookings {
+  width: 100%;
+  max-height: 400px; /* Adjust the height as needed */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.admin-container .results .bookings .booking {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+.admin-container .results .bookings .booking table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.admin-container .results .bookings .booking table td {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+.admin-container .results .bookings .booking button {
+  padding: 5px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .admin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .admin-container .results {
+    width: 100%;
+  }
+}/*# sourceMappingURL=admin.css.map */

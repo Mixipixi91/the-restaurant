@@ -1,0 +1,139 @@
+/* === Navigationsfält === */
+.navbar {
+  
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  padding: 15px 0 15px 0;
+  background-color: black;
+}
+  
+  /* Logotyp */
+  .logo {
+    height: 50px;
+    max-width: 200px;
+  }
+  
+  /* Navigeringslänkar */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-left: 23rem;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #FFD700;
+  }
+  
+  /* === Mobilversion med Hamburgermeny === */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+      left: 46px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      display: none;
+    }
+  
+    .nav-links a {
+      font-size: 16px;
+    }
+  
+    /* Hamburgermeny-knapp */
+    .hamburger-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: black;
+      color: white;
+      border-radius: 50%;
+      font-size: 24px;
+      cursor: pointer;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 15;
+    }
+  
+    /* När menyn är öppen */
+    .nav-links.open {
+      display: flex;
+      position: absolute;
+      top: 60px;
+      left: -154px;
+      transform: translateX(-50%);
+      width: 80%;
+      background: rgba(0, 0, 0, 0.9);
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      padding: 15px 0;
+      border-radius: 20px;
+      z-index: 10;
+    }
+  }
+  
+  /* === Justeringar för Hamburger-meny och kors (X) === */
+  @media (max-width: 768px) {
+    .hamburger-menu {
+      width: 60px;
+      height: 60px;
+      font-size: 28px;
+      position: fixed;
+      top: 2px;
+      left: 81%;
+      transform: translateX(-50%);
+      z-index: 20;
+      transition: 0.3s ease;
+    }
+  
+    .hamburger-menu.open {
+      background-color: #FFD700;
+      color: black;
+    }
+  
+    .nav-links {
+      top: 100px;
+      left: 10%;
+      transform: translateX(-50%);
+      width: 80%;
+      background: rgba(0, 0, 0, 0.9);
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      padding: 20px 0;
+      display: none;
+      border-radius: 20px;
+      z-index: 10;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-links a {
+      font-size: 20px;
+      padding: 10px;
+    }
+  }

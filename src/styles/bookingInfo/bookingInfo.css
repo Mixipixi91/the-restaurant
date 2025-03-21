@@ -1,0 +1,27 @@
+.booking-info h1 {
+  text-align: center;
+}
+.booking-info .booking-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.booking-info .booking-form input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.booking-info .booking-form .form-buttons {
+  display: flex;
+  gap: 10px;
+}
+.booking-info .booking-form .form-buttons button {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background-color: #040303;
+  cursor: pointer;
+}/*# sourceMappingURL=bookingInfo.css.map */

@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 85%;
+  justify-self: center;
+
+  .booking-options {
+    display: flex;
+    border: 2px solid rgb(154, 149, 149);
+    padding: 5px;
+    gap: 0.5rem;
+    border-radius: 5px;
+
+    button {
+      width: 100%;
+      border: none;
+      background: none;
+      height: 2rem;
+      cursor: pointer;
+      margin-bottom: 0.5rem;
+      align-items: center;
+
+    }
+  }
+
+  .book-btn {
+    background: rgb(14, 13, 13);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    width: 100%;
+    margin: 1rem 0;
+    cursor: pointer;
+  }
+
+  .persons-options,
+  .time-options {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    button {
+      width: 100%;
+      border: 1px solid rgb(154, 149, 149);
+      background: none;
+      height: 2rem;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .container {
+    width: fit-content;
+    .persons-options,
+    .time-options {
+      grid-template-columns: 2fr 2fr;
+  
+      button {
+        width: 10rem;
+      }
+    }
+    .options{
+      display: flex;
+     
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .booking-options {
+      flex-direction: row;
+    
+      button {
+        width: 8rem;
+        border-right: 1px solid rgb(154, 149, 149);
+        margin-bottom: 0;
+      }
+    }
+    
+    .book-btn {
+      width: 26rem;
+    }
+  }
+}

@@ -1,0 +1,155 @@
+.kontakt-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  
+    .header {
+      background-color: #000;
+      padding: 15px 0;
+  
+      nav {
+        ul {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          padding: 0;
+  
+          li {
+            margin: 0 10px;
+  
+            a {
+              color: #fff;
+              text-decoration: none;
+              font-size: 14px;
+  
+              &.active {
+                border-bottom: 2px solid #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .hero-image {
+      background: url('../assets/kontaktimg.JPG') no-repeat center center;
+      background-size: cover;
+      height: 550px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      h1 {
+        color: #fff;
+        font-size: 24px;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 10px 15px;
+        border-radius: 10px;
+      }
+    }
+  
+    .kontakt-form {
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 15px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      font-size: small;
+  
+      h2 {
+        margin-bottom: 15px;
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+  
+        .form-group {
+          text-align: left;
+          margin-bottom: 12px;
+  
+          label {
+            font-weight: bold;
+            margin-bottom: 5px;
+          }
+  
+          input, textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+          }
+        }
+  
+        .submit-btn {
+          margin-top: 12px;
+          padding: 8px;
+          background: #000;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+          font-size: 14px;
+  
+          &:hover {
+            background: #333;
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 767px) {
+      .header {
+        nav {
+          ul {
+            li {
+              margin: 0 5px;
+  
+              a {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+  
+      .hero-image {
+        height: 150px;
+  
+        h1 {
+          font-size: 20px;
+        }
+      }
+  
+      .kontakt-form {
+        max-width: 100%;
+        margin: 15px auto;
+        padding: 10px;
+  
+        h2 {
+          margin-bottom: 12px;
+        }
+  
+        form {
+          .form-group {
+            margin-bottom: 10px;
+  
+            label {
+              margin-bottom: 3px;
+            }
+  
+            input, textarea {
+              padding: 6px;
+            }
+          }
+  
+          .submit-btn {
+            margin-top: 10px;
+            padding: 6px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  
